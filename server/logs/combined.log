@@ -1,0 +1,196 @@
+2025-05-04 00:52:29 info: Server running in development mode on port 5000
+2025-05-04 00:52:31 info: MongoDB Connected: cluster0-shard-00-02.qb993.mongodb.net
+2025-05-04 01:00:53 info: Server running in development mode on port 5000
+2025-05-04 01:00:55 info: MongoDB Connected: cluster0-shard-00-00.qb993.mongodb.net
+2025-05-04 01:03:33 info: Server running in development mode on port 5000
+2025-05-04 01:03:34 error: Error: Cannot read properties of undefined (reading 'bold')
+2025-05-04 01:03:43 info: Server running in development mode on port 5000
+2025-05-04 01:03:44 info: MongoDB Connected: cluster0-shard-00-02.qb993.mongodb.net
+2025-05-04 01:03:47 info: Server running in development mode on port 5000
+2025-05-04 01:03:48 info: MongoDB Connected: cluster0-shard-00-00.qb993.mongodb.net
+2025-05-04 01:14:48 error: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+Stack: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:291:5)
+    at internalNext (C:\Users\bigya\Desktop\BugTracker\server\node_modules\helmet\index.cjs:531:6)
+    at xXssProtectionMiddleware (C:\Users\bigya\Desktop\BugTracker\server\node_modules\helmet\index.cjs:311:3)
+2025-05-04 01:22:04 info: Server running in development mode on port 5000
+2025-05-04 01:22:05 info: MongoDB Connected: cluster0-shard-00-00.qb993.mongodb.net
+2025-05-04 01:22:11 error: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+Stack: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:291:5)
+    at internalNext (C:\Users\bigya\Desktop\BugTracker\server\node_modules\helmet\index.cjs:531:6)
+    at xXssProtectionMiddleware (C:\Users\bigya\Desktop\BugTracker\server\node_modules\helmet\index.cjs:311:3)
+2025-05-04 01:22:48 info: Server running in development mode on port 5000
+2025-05-04 01:22:50 info: MongoDB Connected: cluster0-shard-00-01.qb993.mongodb.net
+2025-05-04 01:23:43 info: Server running in development mode on port 5000
+2025-05-04 01:23:50 info: Server running in development mode on port 5000
+2025-05-04 01:23:51 info: MongoDB Connected: cluster0-shard-00-01.qb993.mongodb.net
+2025-05-04 01:23:56 error: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+Stack: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:291:5)
+    at internalNext (C:\Users\bigya\Desktop\BugTracker\server\node_modules\helmet\index.cjs:531:6)
+    at xXssProtectionMiddleware (C:\Users\bigya\Desktop\BugTracker\server\node_modules\helmet\index.cjs:311:3)
+2025-05-04 01:24:02 info: Server running in development mode on port 5000
+2025-05-04 01:24:03 info: MongoDB Connected: cluster0-shard-00-02.qb993.mongodb.net
+2025-05-04 08:58:11 info: Server running in development mode on port 5000
+2025-05-04 08:58:12 info: MongoDB Connected: cluster0-shard-00-01.qb993.mongodb.net
+2025-05-04 08:58:27 error: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+Stack: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:291:5)
+    at internalNext (C:\Users\bigya\Desktop\BugTracker\server\node_modules\helmet\index.cjs:531:6)
+    at xXssProtectionMiddleware (C:\Users\bigya\Desktop\BugTracker\server\node_modules\helmet\index.cjs:311:3)
+2025-05-04 08:59:39 info: Server running in development mode on port 5000
+2025-05-04 08:59:41 info: MongoDB Connected: cluster0-shard-00-02.qb993.mongodb.net
+2025-05-04 08:59:52 info: Server running in development mode on port 5000
+2025-05-04 08:59:53 info: MongoDB Connected: cluster0-shard-00-00.qb993.mongodb.net
+2025-05-04 08:59:55 error: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+Stack: TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:291:5)
+    at internalNext (C:\Users\bigya\Desktop\BugTracker\server\node_modules\helmet\index.cjs:531:6)
+    at xXssProtectionMiddleware (C:\Users\bigya\Desktop\BugTracker\server\node_modules\helmet\index.cjs:311:3)
+2025-05-04 09:00:56 info: Server running in development mode on port 5000
+2025-05-04 09:00:57 info: MongoDB Connected: cluster0-shard-00-01.qb993.mongodb.net
+2025-05-04 09:01:08 info: Server running in development mode on port 5000
+2025-05-04 09:01:09 info: MongoDB Connected: cluster0-shard-00-00.qb993.mongodb.net
+2025-05-04 09:03:08 error: Error: Illegal arguments: string, undefined
+Stack: Error: Illegal arguments: string, undefined
+    at _async (C:\Users\bigya\Desktop\BugTracker\server\node_modules\bcryptjs\umd\index.js:305:15)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\bcryptjs\umd\index.js:335:11
+    at new Promise (<anonymous>)
+    at Object.compare (C:\Users\bigya\Desktop\BugTracker\server\node_modules\bcryptjs\umd\index.js:334:16)
+    at UserSchema.methods.matchPassword (C:\Users\bigya\Desktop\BugTracker\server\models\User.js:55:23)
+    at C:\Users\bigya\Desktop\BugTracker\server\controllers\authController.js:62:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-04 09:05:00 info: Server running in development mode on port 5000
+2025-05-04 09:05:02 info: MongoDB Connected: cluster0-shard-00-01.qb993.mongodb.net
+2025-05-04 09:26:54 info: Bug created: 6816e202f611fcc636103bb4 by user 6816dbf916261a36ea220873
+2025-05-04 09:30:35 info: Bug created: 6816e2dff611fcc636103bc0 by user 6816dbf916261a36ea220873
+2025-05-04 09:32:55 error: Error: Route Not Found - /api/bugs/6816e2dff611fcc636103bc0
+Stack: Error: Route Not Found - /api/bugs/6816e2dff611fcc636103bc0
+    at notFound (C:\Users\bigya\Desktop\BugTracker\server\middlewares\notFound.js:8:19)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:291:5)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:688:15
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:276:14)
+    at protect (C:\Users\bigya\Desktop\BugTracker\server\middlewares\authMiddleware.js:33:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-04 09:33:10 error: Error: Status must be Open, In Progress, or Closed
+Stack: Error: Status must be Open, In Progress, or Closed
+    at validateBug (C:\Users\bigya\Desktop\BugTracker\server\validations\bugValidation.js:37:11)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:295:15
+    at param (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:600:14)
+    at param (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:610:14)
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:664:3)
+2025-05-04 09:33:18 info: Bug updated: 6816e2dff611fcc636103bc0 by user 6816dbf916261a36ea220873
+2025-05-04 09:34:38 error: Error: Role User is not authorized to access this resource
+Stack: Error: Role User is not authorized to access this resource
+    at C:\Users\bigya\Desktop\BugTracker\server\middlewares\authMiddleware.js:60:13
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:295:15
+    at param (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:600:14)
+    at param (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:610:14)
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:664:3)
+2025-05-04 09:34:54 error: Error: Role Tester is not authorized to access this resource
+Stack: Error: Role Tester is not authorized to access this resource
+    at C:\Users\bigya\Desktop\BugTracker\server\middlewares\authMiddleware.js:60:13
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:295:15
+    at param (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:600:14)
+    at param (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:610:14)
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:664:3)
+2025-05-04 09:36:14 info: Bug deleted: 6816e2dff611fcc636103bc0 by admin 6816e053f611fcc636103bab
+2025-05-04 10:20:14 error: Error: Route Not Found - /api/users
+Stack: Error: Route Not Found - /api/users
+    at notFound (C:\Users\bigya\Desktop\BugTracker\server\middlewares\notFound.js:8:19)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:291:5)
+    at logger (C:\Users\bigya\Desktop\BugTracker\server\node_modules\morgan\index.js:144:5)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+2025-05-04 10:20:48 error: Error: Route Not Found - /api/users
+Stack: Error: Route Not Found - /api/users
+    at notFound (C:\Users\bigya\Desktop\BugTracker\server\middlewares\notFound.js:8:19)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:291:5)
+    at logger (C:\Users\bigya\Desktop\BugTracker\server\node_modules\morgan\index.js:144:5)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+2025-05-04 10:41:42 info: Server running in development mode on port 5000
+2025-05-04 10:41:43 info: MongoDB Connected: cluster0-shard-00-00.qb993.mongodb.net
+2025-05-04 10:48:22 error: Error: Password is required
+Stack: Error: Password is required
+    at validateUser (C:\Users\bigya\Desktop\BugTracker\server\validations\userValidation.js:55:11)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:295:15
+    at param (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:600:14)
+    at param (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:610:14)
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:664:3)
+2025-05-04 10:59:04 error: TypeError: user.remove is not a function
+Stack: TypeError: user.remove is not a function
+    at C:\Users\bigya\Desktop\BugTracker\server\controllers\userController.js:83:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-04 11:07:25 info: Server running in development mode on port 5000
+2025-05-04 11:07:26 info: MongoDB Connected: cluster0-shard-00-01.qb993.mongodb.net
