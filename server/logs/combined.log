@@ -194,3 +194,62 @@ Stack: TypeError: user.remove is not a function
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2025-05-04 11:07:25 info: Server running in development mode on port 5000
 2025-05-04 11:07:26 info: MongoDB Connected: cluster0-shard-00-01.qb993.mongodb.net
+2025-05-04 21:27:58 info: Server running in development mode on port 5000
+2025-05-04 21:28:00 info: MongoDB Connected: cluster0-shard-00-02.qb993.mongodb.net
+2025-05-04 21:33:31 info: Server running in development mode on port 5000
+2025-05-04 21:33:32 info: MongoDB Connected: cluster0-shard-00-02.qb993.mongodb.net
+2025-05-04 21:41:35 info: Server running in development mode on port 5000
+2025-05-04 21:41:36 info: MongoDB Connected: cluster0-shard-00-00.qb993.mongodb.net
+2025-05-05 01:26:18 info: Server running in development mode on port 5000
+2025-05-05 01:26:20 info: MongoDB Connected: cluster0-shard-00-01.qb993.mongodb.net
+2025-05-05 01:30:00 error: Error: Route Not Found - /api/bugs/6816e202f611fcc636103bb4/comment
+Stack: Error: Route Not Found - /api/bugs/6816e202f611fcc636103bb4/comment
+    at notFound (C:\Users\bigya\Desktop\BugTracker\server\middlewares\notFound.js:8:19)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:291:5)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:688:15
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:276:14)
+    at protect (C:\Users\bigya\Desktop\BugTracker\server\middlewares\authMiddleware.js:33:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-05 01:30:49 info: Comment added to bug 6816e202f611fcc636103bb4 by user 6816dbf916261a36ea220873
+2025-05-05 01:32:54 info: Comment added to bug 6816e202f611fcc636103bb4 by user 6816dbf916261a36ea220873
+2025-05-05 01:34:28 error: Error: Not authorized, no token
+Stack: Error: Not authorized, no token
+    at protect (C:\Users\bigya\Desktop\BugTracker\server\middlewares\authMiddleware.js:42:11)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:186:3)
+    at router (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+2025-05-05 01:36:08 info: Comment added to bug 6816e202f611fcc636103bb4 by user 6816dbf916261a36ea220873
+2025-05-05 01:36:50 error: Error: Invalid email or password
+Stack: Error: Invalid email or password
+    at C:\Users\bigya\Desktop\BugTracker\server\controllers\authController.js:75:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-05 01:37:52 error: Error: Route Not Found - /api/bugs/6816e202f611fcc636103bb4/comments/6817c52b98dc4cbdf45282b1
+Stack: Error: Route Not Found - /api/bugs/6816e202f611fcc636103bb4/comments/6817c52b98dc4cbdf45282b1
+    at notFound (C:\Users\bigya\Desktop\BugTracker\server\middlewares\notFound.js:8:19)
+    at Layer.handleRequest (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:342:13)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:297:9
+    at processParams (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:582:12)
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:291:5)
+    at C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:688:15
+    at next (C:\Users\bigya\Desktop\BugTracker\server\node_modules\router\index.js:276:14)
+    at protect (C:\Users\bigya\Desktop\BugTracker\server\middlewares\authMiddleware.js:33:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-05 01:38:06 error: Error deleting comment: Not authorized to delete this comment
+2025-05-05 01:38:06 error: Error: Not authorized to delete this comment
+Stack: Error: Not authorized to delete this comment
+    at deleteComment (C:\Users\bigya\Desktop\BugTracker\server\controllers\bugController.js:322:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-05-05 01:38:15 info: Comment 6817c52b98dc4cbdf45282b1 deleted from bug 6816e202f611fcc636103bb4 by user 6816dbf916261a36ea220873
+2025-05-05 07:37:22 info: Server running in development mode on port 5000
+2025-05-05 07:37:23 info: MongoDB Connected: cluster0-shard-00-01.qb993.mongodb.net

@@ -1,5 +1,23 @@
 const mongoose = require('mongoose');
 
+// Comment Schema (embedded schema)
+const CommentSchema = new mongoose.Schema(
+  {
+    text: {
+      type: String,
+      required: [true, 'Comment text is required'],
+      trim: true,
+      maxlength: [500, 'Comment cannot be more than 500 characters'],
+    },
+    createdBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
+      required: true,
+    },
+  },
+  { timestamps: true }
+);
+
 const BugSchema = new mongoose.Schema(
   {
     title: {
@@ -32,6 +50,7 @@ const BugSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
     },
+    comments: [CommentSchema],
   },
   { timestamps: true }
 );

@@ -104,7 +104,8 @@ const getBugById = async (req, res) => {
   try {
     const bug = await Bug.findById(req.params.id)
       .populate('createdBy', 'name')
-      .populate('assignedTo', 'name');
+      .populate('assignedTo', 'name')
+      .populate('comments.createdBy', 'name');
     
     if (!bug) {
       res.status(404);
@@ -209,10 +210,150 @@ const deleteBug = async (req, res) => {
   }
 };
 
+/**
+ * Add a comment to a bug
+ * @route POST /api/bugs/:id/comments
+ * @access Private
+ */
+const addComment = async (req, res) => {
+  try {
+    const bug = await Bug.findById(req.params.id);
+    
+    if (!bug) {
+      res.status(404);
+      throw new Error('Bug not found');
+    }
+    
+    // Create new comment
+    const newComment = {
+      text: req.body.text,
+      createdBy: req.user._id
+    };
+    
+    // Add comment to bug
+    bug.comments.push(newComment);
+    
+    // Save bug with new comment
+    await bug.save();
+    
+    // Get the newly added comment
+    const comment = bug.comments[bug.comments.length - 1];
+    
+    logger.info(`Comment added to bug ${bug._id} by user ${req.user._id}`);
+    
+    res.status(201).json({
+      success: true,
+      data: comment
+    });
+  } catch (error) {
+    // Handle invalid ObjectId format
+    if (error.name === 'CastError') {
+      res.status(404);
+      throw new Error('Bug not found with this ID');
+    }
+    
+    logger.error(`Error adding comment: ${error.message}`);
+    throw error;
+  }
+};
+
+/**
+ * Get all comments for a bug
+ * @route GET /api/bugs/:id/comments
+ * @access Private
+ */
+const getComments = async (req, res) => {
+  try {
+    const bug = await Bug.findById(req.params.id)
+      .select('comments')
+      .populate('comments.createdBy', 'name');
+    
+    if (!bug) {
+      res.status(404);
+      throw new Error('Bug not found');
+    }
+    
+    res.status(200).json({
+      success: true,
+      count: bug.comments.length,
+      data: bug.comments
+    });
+  } catch (error) {
+    // Handle invalid ObjectId format
+    if (error.name === 'CastError') {
+      res.status(404);
+      throw new Error('Bug not found with this ID');
+    }
+    
+    logger.error(`Error fetching comments: ${error.message}`);
+    throw error;
+  }
+};
+
+/**
+ * Delete a comment
+ * @route DELETE /api/bugs/:id/comments/:commentId
+ * @access Private
+ */
+const deleteComment = async (req, res) => {
+  try {
+    const bug = await Bug.findById(req.params.id);
+    
+    if (!bug) {
+      res.status(404);
+      throw new Error('Bug not found');
+    }
+    
+    // Find comment by ID
+    const comment = bug.comments.id(req.params.commentId);
+    
+    if (!comment) {
+      res.status(404);
+      throw new Error('Comment not found');
+    }
+    
+    // Check if user is allowed to delete this comment
+    if (
+      comment.createdBy.toString() !== req.user._id.toString() && 
+      bug.createdBy.toString() !== req.user._id.toString() && 
+      req.user.role !== 'Admin'
+    ) {
+      res.status(403);
+      throw new Error('Not authorized to delete this comment');
+    }
+    
+    // Remove comment
+    comment.deleteOne();
+    
+    // Save bug with comment removed
+    await bug.save();
+    
+    logger.info(`Comment ${req.params.commentId} deleted from bug ${bug._id} by user ${req.user._id}`);
+    
+    res.status(200).json({
+      success: true,
+      data: {},
+      message: 'Comment removed successfully'
+    });
+  } catch (error) {
+    // Handle invalid ObjectId format
+    if (error.name === 'CastError') {
+      res.status(404);
+      throw new Error('Resource not found with this ID');
+    }
+    
+    logger.error(`Error deleting comment: ${error.message}`);
+    throw error;
+  }
+};
+
 module.exports = {
   createBug,
   getAllBugs,
   getBugById,
   updateBug,
   deleteBug,
+  addComment,
+  getComments,
+  deleteComment
 };
